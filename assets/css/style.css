@@ -14,26 +14,28 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--accent);
-    cursor: pointer;
-}
-
 ul {
     list-style: none;
 }
 
 li {
     display: inline;
-    margin: 15px;
     font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+li:hover {
+    background: var(--accent);
+    color: #ffffff;
+    cursor: pointer;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 15px;
     background: var(--main);
 }
 
@@ -50,7 +52,7 @@ input {
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,5 +67,11 @@ input {
     color: white;
     font-size: 60px;
     font-weight: 400;
+}
+
+.logo-img {
+    width: 300px;
+    display: flex;
+    align-items: center;
 }
 

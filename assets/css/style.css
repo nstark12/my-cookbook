@@ -1,0 +1,43 @@
+:root {
+    --main: #faa741;
+    --accent: #fa6641;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--main);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+

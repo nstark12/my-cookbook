@@ -47,6 +47,22 @@ input {
     font-size: 20px;
 }
 
+button {
+    text-align: center;
+    margin: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background: var(--main);
+    cursor: pointer;
+}
+
 #hero {
     background-image: url("../images/hero.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
     background-blend-mode: overlay;
@@ -65,7 +81,7 @@ input {
 
 .hero-body h2{
     color: white;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 400;
 }
 
@@ -73,5 +89,10 @@ input {
     width: 300px;
     display: flex;
     align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 

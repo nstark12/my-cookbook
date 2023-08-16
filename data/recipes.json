@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Recipe Test",
+        "category": "Dessert",
+        "allergy-friendly": "Gluten Free",
+        "yield": 4,
+        "description": "test description",
+        "prep-time": 5,
+        "cook-time": 10,
+        "total-time": 15,
+        "ingredients": ["ingredient1", "ingredient2", "ingredient3"],
+        "instructions": ["step1", "step2", "step3", "step4"],
+        "notes": "test note",
+        "nutrition information": {
+            "calories": 100,
+            "fat": 21,
+            "carbs": 2,
+            "protein": 10
+        }
+    }
+]

@@ -1,22 +1,58 @@
 [
-    {
-        "name": "Recipe Test",
-        "category": "Dessert",
-        "allergy-friendly": "Gluten Free",
-        "yield": 4,
-        "description": "test description",
-        "prep-time": 5,
-        "cook-time": 10,
-        "total-time": 15,
-        "ingredients": ["ingredient1", "ingredient2", "ingredient3"],
-        "instructions": ["step1", "step2", "step3", "step4"],
-        "notes": "test note",
-        "nutrition information": {
-            "calories": 100,
-            "fat": 21,
-            "carbs": 2,
-            "protein": 10
-        },
-        "id": 1
-    }
+  {
+    "name": "Recipe Test",
+    "category": "Dessert",
+    "allergens": "Gluten Free",
+    "yield": 4,
+    "description": "test description",
+    "prep-time": 5,
+    "cook-time": 10,
+    "total-time": 15,
+    "ingredients": "ingredients",
+    "instructions": "instructions",
+    "notes": "test note",
+    "nutrition information": {
+      "calories": 100,
+      "fat": 21,
+      "carbs": 2,
+      "protein": 10
+    },
+    "id": 1
+  },
+  {
+    "name": "Test",
+    "category": "appetizer",
+    "allergens": "none",
+    "yield": "4",
+    "description": "f",
+    "prep-time": "4",
+    "cook-time": "4",
+    "total-time": "4",
+    "ingredients": "af",
+    "instructions": "f",
+    "notes": "ioj",
+    "calories": "4",
+    "fat": "4",
+    "carbs": "4",
+    "protein": "4",
+    "id": 0.6943605929916208
+  },
+  {
+    "name": "test3",
+    "category": "salad",
+    "allergens": "gluten-free",
+    "yield": "3",
+    "description": "a",
+    "prep-time": "2",
+    "cook-time": "2",
+    "total-time": "2",
+    "ingredients": "af",
+    "instructions": "afe",
+    "notes": "af",
+    "calories": "3",
+    "fat": "3",
+    "carbs": "3",
+    "protein": "3",
+    "id": 0.8007064999248925
+  }
 ]

@@ -5,6 +5,8 @@ const dataPath = path.join(__dirname, '..', 'data', 'recipes.json')
 const { generateId } = require('../utils/generateId')
 const readAndParseFile = require('../utils/readAndParseFile')
 
+
+
 // API Routes
 router.get('/all-recipes', (req, res) => {
     const recipes = readAndParseFile(dataPath)
@@ -12,20 +14,21 @@ router.get('/all-recipes', (req, res) => {
 })
 
 // ?name=Recipe Query Parameter
-router.get('/search-recipes', (req, res) => {
-    const recipes = readAndParseFile(dataPath)
-    const searchedRecipe = req.query.name
-    const results = recipes.filter(recipe => {
-        const formattedSearchedRecipe = searchedRecipe.toLowerCase().trim()
-        const formattedRecipeName = recipe.name.toLowerCase().trim()
-        return formattedRecipeName.includes(formattedSearchedRecipe)
-    })
-    res.json(results)
-})
+// router.get('/search-recipes', (req, res) => {
+//     const recipes = readAndParseFile(dataPath)
+//     const searchedRecipe = req.query.name
+//     const results = recipes.filter(recipe => {
+//         const formattedSearchedRecipe = searchedRecipe.toLowerCase().trim()
+//         const formattedRecipeName = recipe.name.toLowerCase().trim()
+//         return formattedRecipeName.includes(formattedSearchedRecipe)
+//     })
+//     res.json(results)
+// })
 
 // Add new recipe
 router.post('/add-recipe', async (req, res) => {
-    if (!req.body || !req.body.name || !req.body.category || !req.body.allergy-friendly || !req.body.yield || !req.body.ingredients || !req.body.instructions) {
+    if (!req.body.name || !req.body.category) {
+        console.log('Please enter all')
         return res.status(400).json('Please enter all required fields')
     }
 
@@ -43,7 +46,7 @@ router.post('/add-recipe', async (req, res) => {
 
     // Save file
     writeFileSync(dataPath, JSON.stringify(recipes, null, 2))
-    res.status(201).json(newPet)
+    res.status(201).json(newRecipe)
 })
 
 module.exports = router

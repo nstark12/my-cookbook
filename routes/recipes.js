@@ -13,17 +13,17 @@ router.get('/all-recipes', (req, res) => {
     res.json(recipes)
 })
 
-// ?name=Recipe Query Parameter
-// router.get('/search-recipes', (req, res) => {
-//     const recipes = readAndParseFile(dataPath)
-//     const searchedRecipe = req.query.name
-//     const results = recipes.filter(recipe => {
-//         const formattedSearchedRecipe = searchedRecipe.toLowerCase().trim()
-//         const formattedRecipeName = recipe.name.toLowerCase().trim()
-//         return formattedRecipeName.includes(formattedSearchedRecipe)
-//     })
-//     res.json(results)
-// })
+// ?name=Recipe Query Parameter not working
+router.get('/search-recipes', (req, res) => {
+    const recipes = readAndParseFile(dataPath)
+    const searchedRecipe = req.query.name
+    const results = recipes.filter(recipe => {
+        const formattedSearchedRecipe = searchedRecipe.toLowerCase().trim()
+        const formattedRecipeName = recipe.name.toLowerCase().trim()
+        return formattedRecipeName.includes(formattedSearchedRecipe)
+    })
+    res.json(results)
+})
 
 // Add new recipe
 router.post('/add-recipe', async (req, res) => {
@@ -34,7 +34,7 @@ router.post('/add-recipe', async (req, res) => {
 
     // Read and parse file contents
     const recipes = readAndParseFile(dataPath)
-    console.log(recipes)
+    // console.log(recipes)
 
     // Add new data to the array
     const newRecipe = {

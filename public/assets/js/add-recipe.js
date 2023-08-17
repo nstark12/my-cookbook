@@ -1,4 +1,5 @@
 const form = document.querySelector('form')
+const recipeDiv = document.querySelector('.added-recipes')
 const nameInput = document.querySelector('[name="name"]')
 const categoryInput = document.querySelector('[name="category"]')
 const allergensInput = document.querySelector('[name="allergens"]')
@@ -15,7 +16,7 @@ const fatInput = document.querySelector('[name="fat"]')
 const carbsInput = document.querySelector('[name="carbs"]')
 const proteinInput = document.querySelector('[name="protein"]')
 
-console.log(fatInput)
+console.log(recipeDiv)
 
 const handleSubmit = e => {
     e.preventDefault()
@@ -48,13 +49,13 @@ fetch('/api/add-recipe', {
 })
     .then(response => {
         if (response.status === 201) {
-            window.location.assign('/')
+            window.location.assign('/recipe-book')
         }
     })
     .catch(err => console.log(err))
 
-    console.log(newRecipe)
+    // console.log(newRecipe)
 }
-  
+
 
 form.addEventListener('submit', handleSubmit)

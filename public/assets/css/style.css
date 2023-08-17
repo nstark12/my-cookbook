@@ -91,6 +91,10 @@ button:hover {
     align-items: center;
 }
 
+.hero-body {
+    margin: 4%;
+}
+
 .hero-body h2{
     color: white;
     font-size: 75px;
@@ -188,4 +192,30 @@ textarea {
     margin: 15px;
 }
 
+/* ---------------------- search result styling ---------------------- */
+#results {
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+}
 
+#results li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 2%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--accent);
+    color: white;
+}
+
+#results li h2,
+#results li p {
+    font-weight: 400;
+    color: white;
+}
+
+#results li:hover {
+    background: var(--main);
+}

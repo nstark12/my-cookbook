@@ -10,6 +10,8 @@ const renderResults = results => {
         li.innerHTML = `
         <h2>${recipe.name}</h2>
         <p>${recipe.description}</p>
+        <p>${recipe.category} || ${recipe.allergens}</p>
+        <p>Servings: ${recipe.yield}</p>
         `
         resultsUl.appendChild(li)
     }

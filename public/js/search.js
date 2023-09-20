@@ -8,10 +8,12 @@ const renderResults = results => {
     for (const recipe of results) {
         const li = document.createElement('li')
         li.innerHTML = `
+        <a href="/">
         <h2>${recipe.name}</h2>
         <p>${recipe.description}</p>
         <p>${recipe.category} || ${recipe.allergens}</p>
         <p>Servings: ${recipe.yield}</p>
+        </a>
         `
         resultsUl.appendChild(li)
     }

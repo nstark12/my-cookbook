@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const viewRoutes = require('./views')
-const recipeApiRoutes = require('./recipes')
+const viewRoutes = require('./viewRoutes')
+const recipeApiRoutes = require('./api/recipeRoutes')
 
 // api routes
 router.use('/api', recipeApiRoutes)

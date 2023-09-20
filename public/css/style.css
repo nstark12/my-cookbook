@@ -68,7 +68,7 @@ button:hover {
 }
 
 #hero {
-    background-image: url("../images/hero.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+    background-image: url("../assets/images/hero.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -79,11 +79,11 @@ button:hover {
 }
 
 #hero.recipe-hero {
-    background-image: url("../images/recipe-book.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+    background-image: url("../assets/images/recipe-book.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
 }
 
 #hero.add-recipe {
-    background-image: url("../images/recipe-book2.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+    background-image: url("../assets/images/recipe-book2.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
 }
 
 .navbar {

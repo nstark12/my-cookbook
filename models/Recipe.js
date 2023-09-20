@@ -17,8 +17,13 @@ Recipe.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        category: {
+            type: DataTypes.ENUM(["Appetizer", "Soup", "Salad", "Main", "Dessert"]),
+            allowNull: true,
+        },
         allergens: {
-
+            type: DataTypes.ENUM(["Dairy Free", "Gluten Free", "Nut Free", "Vegan", "Vegetarian"]),
+            allowNull: true,
         },
         yield: {
             type: DataTypes.INTEGER,

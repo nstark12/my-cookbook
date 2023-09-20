@@ -25,7 +25,7 @@ Comment.init(
         recipe_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'resume',
+                model: 'recipe',
                 key: 'id'
             }
         }

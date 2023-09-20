@@ -1,0 +1,25 @@
+[
+    {
+        "content": "I think this looks great!",
+        "user_id": 1,
+        "recipe_id": 1
+    },
+
+    {
+        "content": "I added more sugar",
+        "user_id": 2,
+        "recipe_id": 1
+    },
+
+    {
+        "content": "I would make this again!",
+        "user_id": 3,
+        "recipe_id": 1
+    },
+
+    {
+        "content": "So good and easy to make!",
+        "user_id": 4,
+        "recipe_id": 1
+    }
+]

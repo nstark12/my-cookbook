@@ -67,6 +67,14 @@ button:hover {
     cursor: pointer;
 }
 
+/* ---------------------- login styling ---------------------- */
+h2.login-head {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+/* ---------------------- homepage styling ---------------------- */
+
 #hero {
     background-image: url("../assets/images/hero.jpg"), linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
     background-blend-mode: overlay;

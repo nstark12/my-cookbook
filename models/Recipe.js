@@ -22,8 +22,9 @@ Recipe.init(
             allowNull: true,
         },
         allergens: {
-            type: DataTypes.ENUM(["Dairy Free", "Gluten Free", "Nut Free", "Vegan", "Vegetarian"]),
+            type: DataTypes.ENUM(["None", "Dairy", "Gluten", "Nuts"]),
             allowNull: true,
+            default: "None,"
         },
         yield: {
             type: DataTypes.INTEGER,

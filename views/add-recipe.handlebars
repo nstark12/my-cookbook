@@ -6,6 +6,7 @@
 
     <div class="new-recipe-form container">
         <form id="new-recipe">
+            <input type="hidden" hidden="true" id="recipe-id" name="recipe" value="{{singleRecipe.id}}">
             <label for="name">Recipe Name:</label>
             <input name="name" type="text" placeholder="Recipe Name" required>
             <label for="category">Recipe Category: </label>
@@ -16,26 +17,24 @@
                 <option value="entree">Entr&eacute;e</option>
                 <option value="dessert">Dessert</option>
             </select>
-            <label for="allergens">Allergy Friendly: </label>
+            <label for="allergens">Allergens: </label>
             <select name="allergens" id="allergens" required>
-                <option value="none">N/A</option>
-                <option value="dairy-free">Dairy Free</option>
-                <option value="gluten-free">Gluten Free</option>
-                <option value="nut-free">Nut Free</option>
-                <option value="vegan">Vegan</option>
-                <option value="vegetarian">Vegetarian</option>
+                <option value="none">None</option>
+                <option value="dairy">Dairy</option>
+                <option value="gluten">Gluten</option>
+                <option value="nuts">Nuts</option>
             </select>
             <label for="yield">Number of Servings: </label>
             <input name="yield" type="number" placeholder="Number of Servings" required>
             <label for="description">Recipe Description: </label>
             <textarea name="description" id="description" cols="30" rows="10" placeholder="Recipe Description"></textarea>
 
-            <label for="prep-time">Prep Time:</label>
-            <input name="prep-time" type="number" placeholder="Prep Time (minutes)" required>
-            <label for="cook-time">Cook Time:</label>
-            <input name="cook-time" type="number" placeholder="Cook Time (minutes)" required>
-            <label for="total-time">Total Time:</label>
-            <input name="total-time" type="number" placeholder="Total Time (minutes)" required> 
+            <label for="preptime">Prep Time:</label>
+            <input name="preptime" type="number" placeholder="Prep Time (minutes)" required>
+            <label for="cooktime">Cook Time:</label>
+            <input name="cooktime" type="number" placeholder="Cook Time (minutes)" required>
+            <label for="totaltime">Total Time:</label>
+            <input name="totaltime" type="number" placeholder="Total Time (minutes)" required> 
 
             <!-- need to add more form inputs in JS -->
             <div class="ingredients">
@@ -70,3 +69,5 @@
             </div>
         </form>
     </div>
+
+    <script src="/js/add-recipe.js"></script>

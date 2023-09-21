@@ -2,7 +2,7 @@
     {
         "name": "Caprese Salad",
         "category": "Salad",
-        "allergens": "Gluten Free",
+        "allergens": "None",
         "yield": 4, 
         "description": "Refreshing tomato salad",
         "preptime": 5,
@@ -54,7 +54,7 @@
     {
         "name": "Caprese Salad",
         "category": "Salad",
-        "allergens": "Gluten Free",
+        "allergens": "None",
         "yield": 4, 
         "description": "Refreshing tomato salad",
         "preptime": 5,
@@ -106,7 +106,7 @@
     {
         "name": "Caprese Salad",
         "category": "Salad",
-        "allergens": "Gluten Free",
+        "allergens": "None",
         "yield": 4, 
         "description": "Refreshing tomato salad",
         "preptime": 5,

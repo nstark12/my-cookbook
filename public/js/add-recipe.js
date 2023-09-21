@@ -26,6 +26,7 @@ ingredientBtn.addEventListener('click', (e) => {
     let deleteBtn = document.createElement('button')
 
     newIngredient.setAttribute('type', 'text')
+    newIngredient.classList.add('ingredientName')
 
     deleteBtn.textContent = '-'
     deleteBtn.classList.add('add-ingredient')
@@ -45,6 +46,7 @@ instructionBtn.addEventListener('click', (e) => {
     let deleteBtn = document.createElement('button')
 
     newInstruction.setAttribute('type', 'text')
+    newInstruction.classList.add('step')
 
     deleteBtn.textContent = '-'
     deleteBtn.classList.add('add-ingredient')
@@ -63,6 +65,31 @@ instructionBtn.addEventListener('click', (e) => {
 const handleSubmit = e => {
     e.preventDefault()
 
+ 
+    const newIngredientInputs = document.querySelectorAll('.ingredientName')
+    const ingredients = []
+    let index = 0
+    for (const newIngredientInput of newIngredientInputs) {
+        ingredients.push({
+            ingredientNumber: index + 1,
+            ingredientName: newIngredientInput.value
+        })
+        index++
+    }
+
+    const newInstructionInputs = document.querySelectorAll('.step')
+    const instructions = [0]
+    index = 0
+    for (const newInstructionInput of newInstructionInputs) {
+        instructions.push({
+            stepNumber: index + 1,
+            stepText: newInstructionInput.value
+        })
+        index++
+    }
+
+    console.log(newIngredientInputs, newInstructionInputs)
+
 
 const newRecipe = {
     recipe_id: recipeId.value,
@@ -74,8 +101,8 @@ const newRecipe = {
     preptime: prepInput.value,
     cooktime: cookInput.value,
     totaltime: totalInput.value,
-    ingredients: ingredientsInput.value,
-    instructions: instructionsInput.value,
+    ingredients,
+    instructions,
     notes: notesInput.value,
     calories: caloriesInput.value,
     fat: fatInput.value,

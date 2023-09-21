@@ -11,23 +11,19 @@
         "ingredients" : [
             {
                 "ingredientNumber": "1",
-                "ingredientName": "Cherry Tomatoes",
-                "ingredientAmount": "1 container"
+                "ingredientName": "Cherry Tomatoes"
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Mozzarella Cheese",
-                "ingredientAmount": "1 package of Pearls"
+                "ingredientName": "Mozzarella Cheese"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Basil",
-                "ingredientAmount": "1 package"
+                "ingredientName": "Basil"
             },
             {
                 "ingredientNumber": "4",
-                "ingredientName": "Balsamic Vinegar",
-                "ingredientAmount": "3 T"
+                "ingredientName": "Balsamic Vinegar"
             }
         ],
         "instructions": [
@@ -63,23 +59,19 @@
         "ingredients" : [
             {
                 "ingredientNumber": "1",
-                "ingredientName": "Cherry Tomatoes",
-                "ingredientAmount": "1 container"
+                "ingredientName": "Cherry Tomatoes"
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Mozzarella Cheese",
-                "ingredientAmount": "1 package of Pearls"
+                "ingredientName": "Mozzarella Cheese"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Basil",
-                "ingredientAmount": "1 package"
+                "ingredientName": "Basil"
             },
             {
                 "ingredientNumber": "4",
-                "ingredientName": "Balsamic Vinegar",
-                "ingredientAmount": "3 T"
+                "ingredientName": "Balsamic Vinegar"
             }
         ],
         "instructions": [
@@ -115,23 +107,19 @@
         "ingredients" : [
             {
                 "ingredientNumber": "1",
-                "ingredientName": "Cherry Tomatoes",
-                "ingredientAmount": "1 container"
+                "ingredientName": "Cherry Tomatoes"
             },
             {
                 "ingredientNumber": "2",
-                "ingredientName": "Mozzarella Cheese",
-                "ingredientAmount": "1 package of Pearls"
+                "ingredientName": "Mozzarella Cheese"
             },
             {
                 "ingredientNumber": "3",
-                "ingredientName": "Basil",
-                "ingredientAmount": "1 package"
+                "ingredientName": "Basil"
             },
             {
                 "ingredientNumber": "4",
-                "ingredientName": "Balsamic Vinegar",
-                "ingredientAmount": "3 T"
+                "ingredientName": "Balsamic Vinegar"
             }
         ],
         "instructions": [

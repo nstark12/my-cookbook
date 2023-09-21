@@ -48,6 +48,10 @@ input {
     font-size: 20px;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
 button {
     text-align: center;
     margin: 20px;
@@ -67,6 +71,13 @@ button:hover {
     background: var(--main);
     cursor: pointer;
 }
+
+.hamburger {
+    display: none;
+    font-size: 35px;
+    user-select: none;
+}
+
 
 /* ---------------------- login styling ---------------------- */
 h2.login-head {
@@ -98,6 +109,11 @@ h2.login-head {
 .navbar {
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .hero-body {
@@ -364,4 +380,57 @@ textarea {
 
 #results li:hover {
     background: var(--main);
+}
+
+
+/* ---------------------- media queries ---------------------- */
+@media (max-width: 1000px) {
+    .menu li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--accent);
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 14px;
+        padding: 20px 0;
+    }
+
+    .menu li {
+        font-size: 20px;
+    }
+
+    .menu li:hover {
+        background-color: var(--main);
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin: 35px;
+    }
+
+    .menu a {
+        margin: 15px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

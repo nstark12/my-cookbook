@@ -1,0 +1,48 @@
+<div class="container">
+    <button class="search-btn">Download Recipe</button>
+    <div class="recipe-container">
+        <h1 class="recipe-title">{{singleRecipe.name}}</h1>
+        <h4 class="recipe-description">{{singleRecipe.description}}</h4>
+        <ul>
+            <li class="recipe-li">Category: {{singleRecipe.category}}</li>
+            <li class="recipe-li">Allergens: {{singleRecipe.allergens}}</li>
+            <li class="recipe-li">Yield: {{singleRecipe.yield}}</li>
+        </ul>
+        <ul>
+            <li class="recipe-li">Prep Time: {{singleRecipe.preptime}}</li>
+            <li class="recipe-li">Cook Time: {{singleRecipe.cooktime}}</li>
+            <li class="recipe-li">Total Time: {{singleRecipe.totaltime}}</li>
+        </ul>
+
+        <div class="recipe-ingredients">
+            <h4>Ingredients Needed: </h4>
+            <ul>
+                <li>{{singleRecipe.ingredients}}</li>
+            </ul>
+        </div>
+
+        <div class="recipe-ingredients">
+            <h4>Instructions: </h4>
+            <ul>
+                <li>{{singleRecipe.instructions}}</li>
+            </ul>
+        </div>
+
+        <div class="recipe-notes">
+            <h4>Notes: </h4>
+            <p>{{singleRecipe.notes}}</p>
+        </div>
+
+        <fieldset>
+            <legend><h3>Nutrition Information: </h3></legend>
+            <ul>
+                <li class="nutrition-li">Calories: {{singleRecipe.calories}}</li>
+                <li class="nutrition-li">Total Fat: {{singleRecipe.fat}}</li>
+                <li class="nutrition-li">Total Carbs: {{singleRecipe.carbs}}</li>
+                <li class="nutrition-li">Protein: {{singleRecipe.protein}}</li>
+            </ul>
+        </fieldset>
+
+
+    </div>
+</div>

@@ -15,6 +15,48 @@ const caloriesInput = document.querySelector('[name="calories"]')
 const fatInput = document.querySelector('[name="fat"]')
 const carbsInput = document.querySelector('[name="carbs"]')
 const proteinInput = document.querySelector('[name="protein"]')
+const ingredientBtn = document.getElementById('add-ingredient')
+const instructionBtn = document.getElementById('add-instruction')
+const ingredientDiv = document.querySelector('.ingredients')
+const instructionDiv = document.querySelector('.instructions')
+
+ingredientBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    const newIngredient = document.createElement('input')
+    let deleteBtn = document.createElement('button')
+
+    newIngredient.setAttribute('type', 'text')
+
+    deleteBtn.textContent = '-'
+    deleteBtn.classList.add('add-ingredient')
+    
+    ingredientDiv.appendChild(newIngredient)
+    ingredientDiv.appendChild(deleteBtn)
+
+    deleteBtn.addEventListener('click', () => {
+        ingredientDiv.removeChild(newIngredient)
+        ingredientDiv.removeChild(deleteBtn)
+    })
+})
+
+instructionBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    const newInstruction = document.createElement('input')
+    let deleteBtn = document.createElement('button')
+
+    newInstruction.setAttribute('type', 'text')
+
+    deleteBtn.textContent = '-'
+    deleteBtn.classList.add('add-ingredient')
+    
+    instructionDiv.appendChild(newInstruction)
+    instructionDiv.appendChild(deleteBtn)
+
+    deleteBtn.addEventListener('click', () => {
+        instructionDiv.removeChild(newInstruction)
+        instructionDiv.removeChild(deleteBtn)
+    })
+})
 
 
 

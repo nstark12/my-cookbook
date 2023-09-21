@@ -164,7 +164,7 @@ h6.recipe-description {
     align-items: center;
 }
 
-li.recipe-li {
+.recipe-li {
     font-size: 15px;
     padding: 0;
     margin-right: 7px;
@@ -176,6 +176,50 @@ li.recipe-li:hover {
     background: none;
     color: #000;
     cursor: auto;
+}
+
+
+
+/* ---------------------- recipe styling ---------------------- */
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.recipe-title {
+    font-weight: 400;
+    color: var(--accent);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.recipe-description {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.recipe-ingredients h4,
+.recipe-notes h4 {
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.recipe-ingredients ul li {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------------------- add recipe styling ---------------------- */
@@ -219,6 +263,12 @@ textarea {
     padding: 8px;
     font-size: 15px;
     margin: 15px 0;
+}
+
+.add-ingredient {
+    width: 20%;
+    font-size: 15px;
+    margin: 0 0 10px;
 }
 
 #new-recipe {

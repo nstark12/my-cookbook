@@ -50,5 +50,109 @@
         "carbs": 10,
         "protein": 8,
         "user_id": 1
+    },
+    {
+        "name": "Caprese Salad",
+        "category": "Salad",
+        "allergens": "Gluten Free",
+        "yield": 4, 
+        "description": "Refreshing tomato salad",
+        "preptime": 5,
+        "cooktime": 0,
+        "totaltime": 5,
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Cherry Tomatoes",
+                "ingredientAmount": "1 container"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Mozzarella Cheese",
+                "ingredientAmount": "1 package of Pearls"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Basil",
+                "ingredientAmount": "1 package"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Balsamic Vinegar",
+                "ingredientAmount": "3 T"
+            }
+        ],
+        "instructions": [
+            {
+                "instructionNumber": "1",
+                "instructionText": "Chop tomatoes and basil"
+            },
+            {
+                "instructionNumber": "2",
+                "instructionText": "Mix all ingredients in a bowl"
+            },
+            {
+                "instructionNumber": "3",
+                "instructionText": "Drizzle balsamic vinegar on top and serve"
+            }
+        ],
+        "notes": "Super easy to make",
+        "calories": 100,
+        "fat": 8,
+        "carbs": 10,
+        "protein": 8,
+        "user_id": 1
+    },
+    {
+        "name": "Caprese Salad",
+        "category": "Salad",
+        "allergens": "Gluten Free",
+        "yield": 4, 
+        "description": "Refreshing tomato salad",
+        "preptime": 5,
+        "cooktime": 0,
+        "totaltime": 5,
+        "ingredients" : [
+            {
+                "ingredientNumber": "1",
+                "ingredientName": "Cherry Tomatoes",
+                "ingredientAmount": "1 container"
+            },
+            {
+                "ingredientNumber": "2",
+                "ingredientName": "Mozzarella Cheese",
+                "ingredientAmount": "1 package of Pearls"
+            },
+            {
+                "ingredientNumber": "3",
+                "ingredientName": "Basil",
+                "ingredientAmount": "1 package"
+            },
+            {
+                "ingredientNumber": "4",
+                "ingredientName": "Balsamic Vinegar",
+                "ingredientAmount": "3 T"
+            }
+        ],
+        "instructions": [
+            {
+                "instructionNumber": "1",
+                "instructionText": "Chop tomatoes and basil"
+            },
+            {
+                "instructionNumber": "2",
+                "instructionText": "Mix all ingredients in a bowl"
+            },
+            {
+                "instructionNumber": "3",
+                "instructionText": "Drizzle balsamic vinegar on top and serve"
+            }
+        ],
+        "notes": "Super easy to make",
+        "calories": 100,
+        "fat": 8,
+        "carbs": 10,
+        "protein": 8,
+        "user_id": 1
     }
 ]

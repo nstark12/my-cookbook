@@ -12,4 +12,20 @@
         </div>
     </div>
 
+    <div class="container card-container">
+        {{#each recipes}}
+            <div class="card">
+                <div class="card-body">
+                    <a href="/recipes/{{id}}" class="name"><h4>{{name}}</h4></a>
+                    <h6 class="recipe-description">{{description}}</h6>
+                    <ul>
+                        <li class="recipe-li">Category: {{category}}</li>
+                        <li class="recipe-li">{{allergens}}</li>
+                        <li class="recipe-li">Yield: {{yield}}</li>
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
 <script src="/js/search.js"></script>

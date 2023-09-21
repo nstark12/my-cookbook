@@ -125,6 +125,58 @@ h2.login-head {
     margin: 0 auto;
 }
 
+/* ---------------------- recipe book styling ---------------------- */
+a.name h4{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--accent);
+}
+
+a.name h4:hover {
+    color: var(--main);
+}
+
+h6.recipe-description {
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid var(--main);
+    border-radius: 30px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li.recipe-li {
+    font-size: 15px;
+    padding: 0;
+    margin-right: 7px;
+    
+}
+
+li.recipe-li:hover {
+    background: none;
+    color: #000;
+    cursor: auto;
+}
+
 /* ---------------------- add recipe styling ---------------------- */
 fieldset {
     display: flex;

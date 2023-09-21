@@ -17,14 +17,18 @@
         <div class="recipe-ingredients">
             <h4>Ingredients Needed: </h4>
             <ul>
-                <li>{{singleRecipe.ingredients}}</li>
+                {{#each singleRecipe.ingredients}}
+                <li>{{this.ingredientName}}</li>
+                {{/each}}
             </ul>
         </div>
 
         <div class="recipe-ingredients">
             <h4>Instructions: </h4>
             <ul>
-                <li>{{singleRecipe.instructions}}</li>
+                {{#each singleRecipe.instructions}}
+                <li>{{this.stepText}}</li>
+                {{/each}}
             </ul>
         </div>
 

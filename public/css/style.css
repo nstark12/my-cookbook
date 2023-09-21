@@ -18,14 +18,15 @@ ul {
     list-style: none;
 }
 
-li {
+
+li.nav {
     display: inline;
     font-size: 20px;
     padding: 10px 15px;
     border-radius: 20px;
 }
 
-li:hover {
+li.nav:hover {
     background: var(--accent);
     color: #ffffff;
     cursor: pointer;
@@ -165,17 +166,12 @@ h6.recipe-description {
 }
 
 .recipe-li {
+    display: inline;
     font-size: 15px;
     padding: 0;
     margin-right: 7px;
     font-weight: 500;
     
-}
-
-li.recipe-li:hover {
-    background: none;
-    color: #000;
-    cursor: auto;
 }
 
 
@@ -185,6 +181,20 @@ li.recipe-li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2%;
+}
+
+.recipe-page {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.recipe-body {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 2%;
 }
 
@@ -202,7 +212,8 @@ li.recipe-li:hover {
     margin-bottom: 20px;
 }
 
-.recipe-ingredients {
+.recipe-ingredients,
+.recipe-notes {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -221,6 +232,30 @@ li.recipe-li:hover {
     display: flex;
     flex-direction: column;
 }
+
+.instruction-li {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-nutrition {
+    width: 50%;
+}
+
+.nutrition-title {
+    font-size: 25px;
+}
+
+.nutrition-li {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.recipe-notes p {
+    font-size: 20px;
+}
+
 
 /* ---------------------- add recipe styling ---------------------- */
 fieldset {

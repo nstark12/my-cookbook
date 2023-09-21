@@ -14,31 +14,35 @@
             <li class="recipe-li">Total Time: {{singleRecipe.totaltime}}</li>
         </ul>
 
-        <div class="recipe-ingredients">
-            <h4>Ingredients Needed: </h4>
-            <ul>
-                {{#each singleRecipe.ingredients}}
-                <li>{{this.ingredientName}}</li>
-                {{/each}}
-            </ul>
+        <div class="recipe-body">
+
+            <div class="recipe-ingredients">
+                <h4>Ingredients Needed: </h4>
+                <ul>
+                    {{#each singleRecipe.ingredients}}
+                    <li class="recipe-li recipe-page">{{this.ingredientName}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="recipe-ingredients">
+                <h4>Instructions: </h4>
+                <ol class="ol-instructions">
+                    {{#each singleRecipe.instructions}}
+                    <li class="instruction-li">{{this.stepText}}</li>
+                    {{/each}}
+                </ol>
+            </div>
+
+            <div class="recipe-notes">
+                <h4>Notes: </h4>
+                <p>{{singleRecipe.notes}}</p>
+            </div>
+
         </div>
 
-        <div class="recipe-ingredients">
-            <h4>Instructions: </h4>
-            <ul>
-                {{#each singleRecipe.instructions}}
-                <li>{{this.stepText}}</li>
-                {{/each}}
-            </ul>
-        </div>
-
-        <div class="recipe-notes">
-            <h4>Notes: </h4>
-            <p>{{singleRecipe.notes}}</p>
-        </div>
-
-        <fieldset>
-            <legend><h3>Nutrition Information: </h3></legend>
+        <fieldset class="recipe-nutrition">
+            <legend><h3 class="nutrition-title">Nutrition Information:</h3></legend>
             <ul>
                 <li class="nutrition-li">Calories: {{singleRecipe.calories}}</li>
                 <li class="nutrition-li">Total Fat: {{singleRecipe.fat}}</li>

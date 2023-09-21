@@ -22,8 +22,8 @@ ul {
 li.nav {
     display: inline;
     font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 20px;
+    padding: 15px 15px;
+    border-radius: 30px;
 }
 
 li.nav:hover {
@@ -79,6 +79,7 @@ button:hover {
 }
 
 
+
 /* ---------------------- login styling ---------------------- */
 h2.login-head {
     font-weight: 300;
@@ -109,7 +110,6 @@ h2.login-head {
 .navbar {
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 .navbar .icon {

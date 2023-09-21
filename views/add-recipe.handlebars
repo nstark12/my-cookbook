@@ -1,0 +1,72 @@
+<div id="hero" class="add-recipe">
+        <div class="hero-body">
+            <h2>Add a New Recipe</h2>
+        </div>
+    </div>
+
+    <div class="new-recipe-form container">
+        <form id="new-recipe">
+            <label for="name">Recipe Name:</label>
+            <input name="name" type="text" placeholder="Recipe Name" required>
+            <label for="category">Recipe Category: </label>
+            <select name="category" id="category" required>
+                <option value="appetizer">Appetizer</option>
+                <option value="soup">Soup</option>
+                <option value="salad">Salad</option>
+                <option value="entree">Entr&eacute;e</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <label for="allergens">Allergy Friendly: </label>
+            <select name="allergens" id="allergens" required>
+                <option value="none">N/A</option>
+                <option value="dairy-free">Dairy Free</option>
+                <option value="gluten-free">Gluten Free</option>
+                <option value="nut-free">Nut Free</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+            <label for="yield">Number of Servings: </label>
+            <input name="yield" type="number" placeholder="Number of Servings" required>
+            <label for="description">Recipe Description: </label>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Recipe Description"></textarea>
+
+            <label for="prep-time">Prep Time:</label>
+            <input name="prep-time" type="number" placeholder="Prep Time (minutes)" required>
+            <label for="cook-time">Cook Time:</label>
+            <input name="cook-time" type="number" placeholder="Cook Time (minutes)" required>
+            <label for="total-time">Total Time:</label>
+            <input name="total-time" type="number" placeholder="Total Time (minutes)" required> 
+
+            <!-- need to add more form inputs in JS -->
+            <div class="ingredients">
+            <label for="ingredients">Ingredients:</label>
+            <input name="ingredients" type="text" placeholder="Add Ingredient">
+            </div>
+
+            <!-- need to add more form inputs in JS -->
+            <div class="instructions">
+                <label for="instructions">Instructions:</label>
+                <input name="instructions" type="text" placeholder="Add Instruction">
+                </div>
+
+            <label for="notes">Notes:</label>
+            <textarea name="notes" id="notes" cols="10" rows="2" placeholder="Notes"></textarea>
+
+            <fieldset>
+                <legend><h3>Nutrition Information:</h3></legend>
+                <div class="inputs">
+                    <label for="calories">Calories:</label>
+                    <input name="calories" type="number" placeholder="kcal">
+                    <label for="fat">Total Fat:</label>
+                    <input name="fat" type="number" placeholder="grams">
+                    <label for="carbs">Total Carbs:</label>
+                    <input name="carbs" type="number" placeholder="grams">
+                    <label for="protein">Total Protein:</label>
+                    <input name="protein" type="number" placeholder="grams">
+                </div>
+            </fieldset>
+            <div class="button-container">
+                <button class="search-btn" type="submit">Add Recipe!</button>
+            </div>
+        </form>
+    </div>

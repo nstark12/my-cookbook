@@ -16,15 +16,27 @@ function getRecipes(recipeName) {
 
     })
     .then(function(recipeData) {
-
-        console.log(recipeData.results[0])
-
         var recipeContainer = document.querySelector('.recipe-data')
-        var h1 = document.createElement('h1')
-        recipeContainer.appendChild(h1)
 
-        h1.innerText = recipeData.results[0].title
-        console.log(h1)
+        for (let i = 0; i < 10; i++) {
+            var recipeCard = document.createElement('div')
+            recipeCard.classList.add('recipe-card')
+            var h1 = document.createElement('h1')
+            h1.classList.add('recipe-card-title')
+
+            var recipeImg = document.createElement('img')
+                recipeImg.setAttribute('src', recipeData.results[i].image)
+                recipeImg.classList.add('recipe-card-img')
+
+            recipeCard.appendChild(h1)
+            recipeCard.appendChild(recipeImg)
+
+            recipeContainer.appendChild(recipeCard)
+
+            h1.innerText = recipeData.results[i].title
+        
+        }
+
     })
     .catch(function(err) {
         console.log(err)

@@ -142,6 +142,33 @@ h2.login-head {
     margin: 0 auto;
 }
 
+.recipe-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe-card {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    border: 4px solid var(--accent);
+    border-radius: 25px;
+}
+
+.recipe-card-title {
+    font-weight: 400;
+    text-align: center;
+    margin: 2%;
+}
+
+.recipe-card-img {
+    width: 90%;
+    margin: 2%;
+}
+
 /* ---------------------- recipe book styling ---------------------- */
 a.name h4{
     font-weight: 500;

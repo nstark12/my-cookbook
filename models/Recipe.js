@@ -24,7 +24,7 @@ Recipe.init(
         allergens: {
             type: DataTypes.ENUM(["None", "Dairy", "Gluten", "Nuts"]),
             allowNull: true,
-            default: "None,"
+            default: "None"
         },
         yield: {
             type: DataTypes.INTEGER,
@@ -61,18 +61,22 @@ Recipe.init(
         calories: {
             type: DataTypes.STRING,
             allowNull: true,
+            defaultValue: 'Not Entered'
         },
         fat: {
             type: DataTypes.STRING,
             allowNull: true,
+            defaultValue: 'Not Entered'
         },
         carbs: {
             type: DataTypes.STRING,
             allowNull: true,
+            defaultValue: 'Not Entered'
         },
         protein: {
             type: DataTypes.STRING,
             allowNull: true,
+            defaultValue: 'Not Entered'
         },
         user_id: {
             type: DataTypes.INTEGER,

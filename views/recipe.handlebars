@@ -6,12 +6,12 @@
         <ul>
             <li class="recipe-li">Category: {{singleRecipe.category}}</li>
             <li class="recipe-li">Allergens: {{singleRecipe.allergens}}</li>
-            <li class="recipe-li">Yield: {{singleRecipe.yield}}</li>
+            <li class="recipe-li">Yield: {{singleRecipe.yield}} Servings</li>
         </ul>
         <ul>
-            <li class="recipe-li">Prep Time: {{singleRecipe.preptime}}</li>
-            <li class="recipe-li">Cook Time: {{singleRecipe.cooktime}}</li>
-            <li class="recipe-li">Total Time: {{singleRecipe.totaltime}}</li>
+            <li class="recipe-li">Prep Time: {{singleRecipe.preptime}} minutes</li>
+            <li class="recipe-li">Cook Time: {{singleRecipe.cooktime}} minutes</li>
+            <li class="recipe-li">Total Time: {{singleRecipe.totaltime}} minutes</li>
         </ul>
 
         <div class="recipe-body">
@@ -41,15 +41,20 @@
 
         </div>
 
-        <fieldset class="recipe-nutrition">
+        {{#if singleRecipe.calories}}
+            <fieldset class="recipe-nutrition">
             <legend><h3 class="nutrition-title">Nutrition Information:</h3></legend>
             <ul>
                 <li class="nutrition-li">Calories: {{singleRecipe.calories}}</li>
-                <li class="nutrition-li">Total Fat: {{singleRecipe.fat}}</li>
-                <li class="nutrition-li">Total Carbs: {{singleRecipe.carbs}}</li>
-                <li class="nutrition-li">Protein: {{singleRecipe.protein}}</li>
+                <li class="nutrition-li">Total Fat: {{singleRecipe.fat}}g</li>
+                <li class="nutrition-li">Total Carbs: {{singleRecipe.carbs}}g</li>
+                <li class="nutrition-li">Protein: {{singleRecipe.protein}}g</li>
             </ul>
         </fieldset>
+
+        {{/if}}
+
+        
 
 
     </div>

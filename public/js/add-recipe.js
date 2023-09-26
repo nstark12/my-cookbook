@@ -28,7 +28,7 @@ ingredientBtn.addEventListener('click', (e) => {
     newIngredient.setAttribute('type', 'text')
     newIngredient.classList.add('ingredientName')
 
-    deleteBtn.textContent = '-'
+    deleteBtn.textContent = 'Remove Ingredient'
     deleteBtn.classList.add('add-ingredient')
     
     ingredientDiv.appendChild(newIngredient)
@@ -48,7 +48,7 @@ instructionBtn.addEventListener('click', (e) => {
     newInstruction.setAttribute('type', 'text')
     newInstruction.classList.add('step')
 
-    deleteBtn.textContent = '-'
+    deleteBtn.textContent = 'Remove Step'
     deleteBtn.classList.add('add-ingredient')
     
     instructionDiv.appendChild(newInstruction)
@@ -78,7 +78,7 @@ const handleSubmit = e => {
     }
 
     const newInstructionInputs = document.querySelectorAll('.step')
-    const instructions = [0]
+    const instructions = []
     index = 0
     for (const newInstructionInput of newInstructionInputs) {
         instructions.push({

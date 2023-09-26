@@ -1,14 +1,11 @@
 <div id="hero" class="recipe-hero">
         <div class="hero-body">
             <h2>My Recipe Book</h2>
-            <form id="search">
-                <input type="search" placeholder="Recipe or Food Item">
+           
                 <div class="button-container">
-                    <button class="search-btn" type="submit">Search</button>
-                    <button class="search-btn"><a href="/add-recipe">Add New</a></button>
+                    <button class="search-btn"><a href="/add-recipe">Add Recipe</a></button>
 
                 </div>
-            </form>
         </div>
     </div>
 
@@ -20,12 +17,10 @@
                     <h6 class="recipe-description">{{description}}</h6>
                     <ul>
                         <li class="recipe-li">Category: {{category}}</li>
-                        <li class="recipe-li">{{allergens}}</li>
+                        <li class="recipe-li">Allergens: {{allergens}}</li>
                         <li class="recipe-li">Yield: {{yield}}</li>
                     </ul>
                 </div>
             </div>
         {{/each}}
     </div>
-
-<script src="/js/search.js"></script>

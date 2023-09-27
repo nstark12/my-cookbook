@@ -19,12 +19,14 @@ function getRecipes(recipeName) {
         var recipeContainer = document.querySelector('.recipe-data')
 
         for (let i = 0; i < 10; i++) {
-            var recipeCard = document.createElement('div')
+            let recipeId = recipeData.results[i].id
+            console.log(recipeId)
+            const recipeCard = document.createElement('div')
             recipeCard.classList.add('recipe-card')
-            var h1 = document.createElement('h1')
+            const h1 = document.createElement('h1')
             h1.classList.add('recipe-card-title')
 
-            var recipeImg = document.createElement('img')
+            const recipeImg = document.createElement('img')
                 recipeImg.setAttribute('src', recipeData.results[i].image)
                 recipeImg.classList.add('recipe-card-img')
 
@@ -34,6 +36,32 @@ function getRecipes(recipeName) {
             recipeContainer.appendChild(recipeCard)
 
             h1.innerText = recipeData.results[i].title
+
+            fetch('https://api.spoonacular.com/recipes/' + recipeId + '/information?apiKey=' + apiKey, {
+                method: 'GET',
+                headers: { 'X-Api-Key': '8835726891f84536a907703b99861410'},
+                contentType: 'application/json',
+                success: function(result) {
+                    console.log(result)
+                }
+            })
+            .then(function(response) {
+                return response.json()
+         
+             })
+             .then(function(recipeData){
+                var recipeContainer = document.querySelector('.recipe-data')
+                
+                console.log(recipeData.cheap)
+                const recipeLink = document.createElement('a')
+                let linkText = document.createTextNode('Test')
+                recipeLink.appendChild(linkText)
+                recipeLink.title = 'Test title'
+                recipeLink.href = recipeData.sourceUrl
+                recipeCard.appendChild(recipeLink)
+             }) 
+
+             
         
         }
 

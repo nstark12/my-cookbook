@@ -23,19 +23,8 @@ function getRecipes(recipeName) {
             console.log(recipeId)
             const recipeCard = document.createElement('div')
             recipeCard.classList.add('recipe-card')
-            const h1 = document.createElement('h1')
-            h1.classList.add('recipe-card-title')
-
-            const recipeImg = document.createElement('img')
-                recipeImg.setAttribute('src', recipeData.results[i].image)
-                recipeImg.classList.add('recipe-card-img')
-
-            recipeCard.appendChild(h1)
-            recipeCard.appendChild(recipeImg)
 
             recipeContainer.appendChild(recipeCard)
-
-            h1.innerText = recipeData.results[i].title
 
             fetch('https://api.spoonacular.com/recipes/' + recipeId + '/information?apiKey=' + apiKey, {
                 method: 'GET',
@@ -50,15 +39,20 @@ function getRecipes(recipeName) {
          
              })
              .then(function(recipeData){
-                var recipeContainer = document.querySelector('.recipe-data')
                 
-                console.log(recipeData.cheap)
                 const recipeLink = document.createElement('a')
-                let linkText = document.createTextNode('Test')
+                let linkText = document.createTextNode(recipeData.title)
                 recipeLink.appendChild(linkText)
                 recipeLink.title = 'Test title'
                 recipeLink.href = recipeData.sourceUrl
                 recipeCard.appendChild(recipeLink)
+                recipeLink.classList.add('recipe-link')
+
+                const recipeImg = document.createElement('img')
+                recipeImg.setAttribute('src', recipeData.image)
+                recipeImg.classList.add('recipe-card-img')
+                recipeCard.appendChild(recipeImg)
+                
              }) 
 
              

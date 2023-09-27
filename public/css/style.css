@@ -154,7 +154,7 @@ h2.login-head {
     flex-direction: column;
     align-items: center;
     margin: 2%;
-    border: 4px solid var(--accent);
+    border: 4px solid var(--main);
     border-radius: 25px;
 }
 
@@ -167,6 +167,17 @@ h2.login-head {
 .recipe-card-img {
     width: 90%;
     margin: 2%;
+}
+
+.recipe-link {
+    font-size: 35px;
+    color: var(--accent);
+    margin: 2%;
+}
+
+.recipe-link:hover {
+    cursor: pointer;
+    color: var(--main);
 }
 
 /* ---------------------- recipe book styling ---------------------- */

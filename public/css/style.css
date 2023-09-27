@@ -264,6 +264,7 @@ h6.recipe-description {
     font-style: italic;
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .recipe-ingredients,
@@ -308,6 +309,16 @@ h6.recipe-description {
 
 .recipe-notes p {
     font-size: 20px;
+}
+
+.recipe-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-book-image {
+    width: 80%;
+    margin: 2% 2% 6%;
 }
 
 
@@ -429,12 +440,6 @@ textarea {
 }
 
 @media (max-width: 850px) {
-    .menu li {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;

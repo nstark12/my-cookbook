@@ -54,7 +54,9 @@ function getRecipes(recipeName) {
                 recipeCard.appendChild(recipeImg)
                 
              }) 
-
+             .catch(function(err) {
+                console.log(err)
+             })
              
         
         }

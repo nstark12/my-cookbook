@@ -13,8 +13,9 @@
         {{#each recipes}}
             <div class="card">
                 <div class="card-body">
-                    <a href="/recipes/{{id}}" class="name"><h4>{{name}}</h4></a>
+                    <a href="/recipes/{{id}}" class="name"><h4 class="recipe-name">{{name}}</h4></a>
                     <h6 class="recipe-description">{{description}}</h6>
+                    <div class="recipe-image-container"></div>
                     <ul>
                         <li class="recipe-li">Category: {{category}}</li>
                         <li class="recipe-li">Allergens: {{allergens}}</li>
@@ -24,3 +25,5 @@
             </div>
         {{/each}}
     </div>
+
+    {{!-- <script src="/js/recipe-book.js"></script> --}}

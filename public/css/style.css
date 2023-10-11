@@ -219,6 +219,8 @@ h6.recipe-description {
     align-items: center;
 }
 
+
+
 .recipe-li {
     display: inline;
     font-size: 15px;
@@ -318,7 +320,19 @@ h6.recipe-description {
 
 .recipe-book-image {
     width: 80%;
-    margin: 2% 2% 6%;
+    margin: 2% 2% 2%;
+}
+
+.recipe-card-li {
+    padding: 10px;
+}
+
+.disclaimer {
+    margin: 0 2% 4%;
+    width: 30%;
+    font-size: 9px;
+    color: lightslategray;
+    text-align: center;
 }
 
 
@@ -475,5 +489,12 @@ textarea {
 
     .hamburger {
         display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-li {
+        display: flex;
+        justify-content: center;
     }
 }

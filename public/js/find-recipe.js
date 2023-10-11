@@ -20,7 +20,6 @@ function getRecipes(recipeName) {
 
         for (let i = 0; i < 10; i++) {
             let recipeId = recipeData.results[i].id
-            console.log(recipeId)
             const recipeCard = document.createElement('div')
             recipeCard.classList.add('recipe-card')
 
@@ -39,6 +38,7 @@ function getRecipes(recipeName) {
          
              })
              .then(function(recipeData){
+                console.log(recipeData)
                 
                 const recipeLink = document.createElement('a')
                 let linkText = document.createTextNode(recipeData.title)
@@ -52,6 +52,38 @@ function getRecipes(recipeName) {
                 recipeImg.setAttribute('src', recipeData.image)
                 recipeImg.classList.add('recipe-card-img')
                 recipeCard.appendChild(recipeImg)
+
+                const recipeInfo = document.createElement('ul')
+                const dishType = document.createElement('li')
+                const servings = document.createElement('li')
+                const readyTime = document.createElement('li')
+
+                dishType.innerText = 'Dish Type: ' + recipeData.dishTypes[0]
+                servings.innerText = 'Servings: ' + recipeData.servings
+                readyTime.innerText = 'Ready in: ' + recipeData.readyInMinutes + ' minutes'
+
+                dishType.classList.add('recipe-card-li')
+                servings.classList.add('recipe-card-li')
+                readyTime.classList.add('recipe-card-li')
+                
+                recipeInfo.appendChild(dishType)
+                recipeInfo.appendChild(servings)
+                recipeInfo.appendChild(readyTime)
+                recipeCard.appendChild(recipeInfo)
+
+                if (recipeData.glutenFree === true) {
+                    const glutenFree = document.createElement('li')
+                    glutenFree.innerText = 'Gluten Free'
+                    glutenFree.classList.add('recipe-card-li')
+                    recipeInfo.appendChild(glutenFree)
+                }
+
+                if (recipeData.vegetarian === true) {
+                    const vegetarian = document.createElement('li')
+                    vegetarian.innerText = 'Vegetarian'
+                    vegetarian.classList.add('recipe-card-li')
+                    recipeInfo.appendChild(vegetarian)
+                }
                 
              }) 
              .catch(function(err) {

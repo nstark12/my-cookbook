@@ -497,4 +497,10 @@ textarea {
         display: flex;
         justify-content: center;
     }
+
+    .recipe-link {
+        font-size: 20px;
+        color: var(--accent);
+        margin: 2%;
+    }
 }
